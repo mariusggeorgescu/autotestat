@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A U T O T E S T A T . R O</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <!-- swiper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+
+    <!-- scroll to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-arrow-up"></i></button>
+
+    <!-- HEADER-->
+    <section class="header2">
+        <nav>
+            <a href="index.html"><img src="images/logo-removebg 1.png" alt="logo image"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ACASA</a></li>
+                    <li><a href="index.html#servicii">Servicii</a></li>
+                    <li><a href="index.html#masini">Autoturisme</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        
+    </section>
+
+<!-- Swiper -->
+ <!-- Swiper -->
+ <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide"><img src="images/Q7/1.jpg" alt="Audi Q7"></div>
+      <div class="swiper-slide"><img src="images/Q7/2.jpg" alt="Audi Q7"></div>
+      <div class="swiper-slide"><img src="images/Q7/3.jpg" alt="Audi Q7"></div>
+      <div class="swiper-slide"><img src="images/Q7/4.jpg" alt="Audi Q7"></div>
+      <div class="swiper-slide"><img src="images/Q7/5.jpg" alt="Audi Q7"></div>
+      <div class="swiper-slide"><img src="images/Q7/6.jpg" alt="Audi Q7"></div>
+      
+      
+
+      
+      
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+  
+
+  <!-- FOOTER -->
+
+<section class="footer" >
+    <h4><span class="marca">autotesat.ro</span><span> este marca inregistrata a</span> S.C. NetIT Maintenance s.r.l. </h4>
+    <p>NetIT Maintenance s.r.l. / CUI: RO35341159 / J5/1959/18.12.2015</p> 
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100089172431070"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://autotestat.autovit.ro/inventory"><img class="autovit" src="images/logo autovit.svg"></a>
+            
+            <p>Made with <i class="fa-regular fa-heart"></i> for <a href="https://www.autotestat.ro">autotesat<span>.</span>ro </a></p>
+        </div>
+        
+        
+        
+
+</section>
+
+<script src="script.js"></script>
+
+<!-- swiper JS-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
